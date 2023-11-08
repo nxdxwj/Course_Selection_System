@@ -17,25 +17,31 @@ public class Run {
                 case 0 -> System.out.println("bye");
                 case 1 -> run.logIn();
                 case 2 -> run.register();
-                default ->  System.out.println("Invalid option entered: " + option);
+                default ->  System.out.println("Invalid option entere. " + option);
             }
         }
 
     private void logIn(){
-        System.out.println("Please enter your account.");
-        Scanner sc = new Scanner(System.in);
-        String account = sc.next();
-        if (account.equals(this.account)) {
+        for (int i = 0; i < 3;i++){
+            System.out.println("Please enter your account.");
+            Scanner sc = new Scanner(System.in);
+            String account = sc.next();
             System.out.println("Please enter your password.");
             String password = sc.next();
-            if (password.equals(this.password)){
+            if (account.equals(this.account) && password.equals(this.password) ) {
                 System.out.println("Log in successfully.");
+                    break;
+                }
+                else{
+                    System.out.println("The account or password is not correct.");
+                    System.out.println("You have "+(2-i)+" opportunities left.");
+                    if (i == 2){
+                        System.out.println("The login opportunities have been used up.");
+                    }
+                }
             }
         }
-        else {
-            System.out.println("Your account is not correct.");
-        }
-    }
+
 
     private void register(){
         System.out.println("Please enter your new account.");

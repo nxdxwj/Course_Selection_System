@@ -3,8 +3,6 @@ package com.nuist.menu;
 import java.util.Scanner;
 
 public class Display {
-    private int option;
-
     public int dispalyMenu(){
         System.out.println("""
                 Course Selection System
@@ -18,9 +16,9 @@ public class Display {
                 """
         );
         Scanner input = new Scanner(System.in);
-        option = input.nextInt();
+         return  input.nextInt();
 
-        return option;
+
 
     }
 }
