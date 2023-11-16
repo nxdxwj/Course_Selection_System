@@ -1,27 +1,38 @@
 package com.nuist.menu;
 
+import com.nuist.model.Student;
+import com.nuist.model.StudentsList;
+import com.nuist.model.Teacher;
+import com.nuist.model.TeachersList;
+
 import java.sql.SQLOutput;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Run {
     private String account = "123456";
     private String password = "123456";
-    
 
-    public static void main(String[] args) {
+    public void runMenu(){
         Display disdplay = new Display();
         Run run = new Run();
         int option = disdplay.dispalyMenu();
 
-            switch (option){
-                case 0 -> System.out.println("bye");
-                case 1 -> run.logIn();
-                case 2 -> run.register();
-                default ->  System.out.println("Invalid option entere. " + option);
+        switch (option){
+            case 0 -> System.out.println("See you ~");
+            case 1 -> run.logIn();
+            case 2 -> run.register();
+            default ->  System.out.println("Invalid option entere. " + option);
             }
-        }
+    }
+
 
     private void logIn(){
+        System.out.println("""
+                请问你的身份是：
+                1)教师
+                2)学生
+                """);
         for (int i = 0; i < 3;i++){
             System.out.println("Please enter your account.");
             Scanner sc = new Scanner(System.in);
@@ -44,6 +55,8 @@ public class Run {
 
 
     private void register(){
+        Run run = new Run();
+
         System.out.println("Please enter your new account.");
         Scanner input2 = new Scanner(System.in);
         String account = input2.next();
@@ -53,11 +66,59 @@ public class Run {
         System.out.println("Please enter the password again to confirm.");
         Scanner input4 = new Scanner(System.in);
         String passwordConfirm = input4.next();
-        if (password.equals(passwordConfirm)){
-            System.out.println("You have created a new account successfully.");
-        }
-        else {
+        while (! password.equals(passwordConfirm)) {
+
             System.out.println("The password you entered is not the same.");
+            System.out.println("Please try again");
+            System.out.println("Please enter the password you want to set.");
+            Scanner input5 = new Scanner(System.in);
+            password = input3.next();
+            System.out.println("Please enter the password again to confirm.");
+            Scanner input6 = new Scanner(System.in);
+            passwordConfirm = input4.next();
         }
+        System.out.println("""
+                请问你的身份是：
+                1)教师
+                2)学生
+                """);
+        Scanner input1 = new Scanner(System.in);
+        int identity = input1.nextInt();
+
+        switch (identity) {
+//            case 1 ->;
+            case 2 -> run.addStudent();
+        }
+        System.out.println("You have created a new account successfully.");
+    }
+    private void addStudent(){
+        Student student = new Student();
+        System.out.println("你的学号是：");
+        Scanner input = new Scanner(System.in);
+        int studentId = input.nextInt();
+        System.out.println("你的姓名是：");
+        String studentName = input.next();
+        student.setStudentId(studentId);
+        student.setStudentName(studentName);
+        StudentsList studentsList = new StudentsList();
+        ArrayList<Student> students = new ArrayList<>();
+        students.addLast(student);
+        studentsList.setStudentArrayList(students);
+        System.out.println(students);
+    }
+    private void addTeacher() {
+        Teacher teacher = new Teacher();
+        System.out.println("你的工号是：");
+        Scanner input = new Scanner(System.in);
+        int teacherId = input.nextInt();
+        System.out.println("你的姓名是：");
+        String teacherName = input.next();
+        teacher.setTeacherId(teacherId);
+        teacher.setTeacherName(teacherName);
+        TeachersList teachersList = new TeachersList();
+        ArrayList<Teacher> teachers = new ArrayList<>();
+        teachers.addLast(teacher);
+        teachersList.setTeacherArrayList(teachers);
+        System.out.println(teachers);
     }
 }
