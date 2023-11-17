@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82289362-0e79-49cb-b157-f5b55b4d2f25" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/nuist/menu/Initial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nuist/menu/Register.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nuist/menu/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuist/menu/LogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nuist/menu/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuist/menu/Run.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +105,7 @@
       <workItem from="1700135149014" duration="5591000" />
       <workItem from="1700218829982" duration="895000" />
       <workItem from="1700219801221" duration="27000" />
+      <workItem from="1700234087703" duration="1427000" />
     </task>
     <servers />
   </component>
