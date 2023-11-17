@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82289362-0e79-49cb-b157-f5b55b4d2f25" name="Changes" comment="" />
+    <list default="true" id="82289362-0e79-49cb-b157-f5b55b4d2f25" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nuist/menu/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuist/menu/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nuist/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuist/model/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nuist/model/CoursesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuist/model/CoursesList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nuist/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuist/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nuist/model/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuist/model/Teacher.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +46,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/code/Course_Selection_System",
+    "last_opened_file_path": "D:/Repository/Course_Selection_System",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -97,6 +104,7 @@
       <workItem from="1698407914237" duration="4000" />
       <workItem from="1698408067563" duration="668000" />
       <workItem from="1700135149014" duration="5591000" />
+      <workItem from="1700218829982" duration="858000" />
     </task>
     <servers />
   </component>
