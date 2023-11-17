@@ -72,13 +72,10 @@ public class Run {
                             System.out.println("Log in successfully.");
                             break;
                         } else {
-                            System.out.println("The account or password is not correct ,or you haven't own a login account.");
+                            System.out.println("The account or password is not correct ,please try again.");
                             System.out.println("You have " + (2 - i) + " opportunities left.");
-                            if (i == 2) {
-                                System.out.println("The login opportunities have been used up.");
-                                return bool = false;
-                            }
                         }
+                        bool = false;
                     }
 
                 case 2:
@@ -89,19 +86,14 @@ public class Run {
                             System.out.println("Log in successfully.");
                             break;
                         } else {
-                            System.out.println("The account or password is not correct.");
+                            System.out.println("The account or password is not correct,please try again.");
                             System.out.println("You have " + (2 - i) + " opportunities left.");
-                            if (i == 2) {
-                                System.out.println("The login opportunities have been used up.");
-                                return bool = false;
-                            }
                         }
+                        bool = false;
                     }
             }
-
         }
         return bool;
-
     }
 
     private boolean register (boolean bool){
