@@ -13,19 +13,22 @@ public class LogIn {
     TeachersList teachersList = new TeachersList();
     ArrayList<Teacher> teachers = new ArrayList<>();
     Scanner input = new Scanner(System.in);
-
-    public boolean logIn(boolean bool) {
-        System.out.println("""
-                    请问你的身份是：
-                    1)教师
-                    2)学生
-                    """);
-        int choice = input.nextInt();
-
-
+    String account;
+    public Student getStudent(boolean bool,int choice){
+        Student response = null;
+        if (bool){
+                    for (int i = 0; i < students.size(); i++) {
+                        if (account.equals(students.get(i).getAccount())){
+                            response = students.get(i);
+                        }
+                    }
+            }
+        return response;
+    }
+    public boolean logIn(boolean bool,int choice) {
         for (int i = 0; i < 3; i++) {
             System.out.println("Please enter your account.");
-            String account = input.next();
+            account = input.next();
 
             System.out.println("Please enter your password.");
             String password = input.next();
