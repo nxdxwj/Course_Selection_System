@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="82289362-0e79-49cb-b157-f5b55b4d2f25" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuist/menu/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuist/menu/Run.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuist/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuist/model/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuist/model/CoursesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuist/model/CoursesList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuist/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuist/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuist/model/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuist/model/Teacher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,22 +34,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Repository/Course_Selection_System",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Repository/Course_Selection_System&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Entrance">
     <configuration name="Entrance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nuist.main.Entrance" />
@@ -104,7 +99,8 @@
       <workItem from="1698407914237" duration="4000" />
       <workItem from="1698408067563" duration="668000" />
       <workItem from="1700135149014" duration="5591000" />
-      <workItem from="1700218829982" duration="858000" />
+      <workItem from="1700218829982" duration="895000" />
+      <workItem from="1700219801221" duration="27000" />
     </task>
     <servers />
   </component>
