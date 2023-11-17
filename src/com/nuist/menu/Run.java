@@ -28,11 +28,14 @@ public class Run {
 
 
     private void logIn(){
+        Scanner input = new Scanner(System.in);
         System.out.println("""
                 请问你的身份是：
                 1)教师
                 2)学生
                 """);
+        int identity = input.nextInt();
+
         for (int i = 0; i < 3;i++){
             System.out.println("Please enter your account.");
             Scanner sc = new Scanner(System.in);
@@ -51,6 +54,12 @@ public class Run {
                     }
                 }
             }
+        switch(identity){
+        //    case 1 ->
+        //    case 2 ->
+        }
+
+
         }
 
 
@@ -58,32 +67,26 @@ public class Run {
         Run run = new Run();
 
         System.out.println("Please enter your new account.");
-        Scanner input2 = new Scanner(System.in);
-        String account = input2.next();
+        Scanner input = new Scanner(System.in);
+        String account = input.next();
         System.out.println("Please enter the password you want to set.");
-        Scanner input3 = new Scanner(System.in);
-        String password = input3.next();
+        String password = input.next();
         System.out.println("Please enter the password again to confirm.");
-        Scanner input4 = new Scanner(System.in);
-        String passwordConfirm = input4.next();
+        String passwordConfirm = input.next();
         while (! password.equals(passwordConfirm)) {
-
             System.out.println("The password you entered is not the same.");
             System.out.println("Please try again");
             System.out.println("Please enter the password you want to set.");
-            Scanner input5 = new Scanner(System.in);
-            password = input3.next();
+            password = input.next();
             System.out.println("Please enter the password again to confirm.");
-            Scanner input6 = new Scanner(System.in);
-            passwordConfirm = input4.next();
+            passwordConfirm = input.next();
         }
         System.out.println("""
                 请问你的身份是：
                 1)教师
                 2)学生
                 """);
-        Scanner input1 = new Scanner(System.in);
-        int identity = input1.nextInt();
+        int identity = input.nextInt();
 
         switch (identity) {
 //            case 1 ->;
@@ -121,4 +124,14 @@ public class Run {
         teachersList.setTeacherArrayList(teachers);
         System.out.println(teachers);
     }
+
+    private void authenticationStudent(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please enter your student ID");
+        String studentID = input.next();
+
+
+    }
+
+    private void authenticationTeacher(){}
 }

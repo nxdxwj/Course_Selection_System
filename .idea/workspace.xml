@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82289362-0e79-49cb-b157-f5b55b4d2f25" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/nuist/model/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nuist/model/CoursesList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nuist/model/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nuist/model/StudentsList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nuist/model/Teacher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nuist/model/TeachersList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuist/main/Entrance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuist/main/Entrance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuist/menu/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuist/menu/Display.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuist/menu/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuist/menu/Run.java" afterDir="false" />
-    </list>
+    <list default="true" id="82289362-0e79-49cb-b157-f5b55b4d2f25" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +39,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/code/Course_Selection_System",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
