@@ -1,13 +1,19 @@
 package com.nuist.menu;
 
 
-import com.nuist.model.Course;
-import com.nuist.model.Student;
+import com.nuist.model.*;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
 public class Run {
+    CoursesList coursesList = new CoursesList();
+    ArrayList<Course> courses = new ArrayList<>();
+    StudentsList studentsList = new StudentsList();
+    ArrayList<Student> students = new ArrayList<>();
+    TeachersList teachersList = new TeachersList();
+    ArrayList<Teacher> teachers = new ArrayList<>();
     Boolean bool = true;
     Scanner input =new Scanner(System.in);
     // 主程序
@@ -18,7 +24,8 @@ public class Run {
         Display disdplay = new Display();
         int option = disdplay.dispalyMenu();
 
-        LogIn logInOperation = new LogIn();
+        TeacherLoginIn teacherLoginIn = new TeacherLoginIn();
+        StudentLoginIn studentLoginIn = new StudentLoginIn();
 
         Register registerOperation = new Register();
 
@@ -34,7 +41,12 @@ public class Run {
                 System.out.println("See you ~");
                 System.exit(0);
             case 1:
-                logInOperation.logIn(bool,choice);
+                switch (choice){
+                    case 1:
+                        teacherLoginIn.logIn(bool,teachersList);
+                    case 2:
+                        studentLoginIn.logIn(bool,studentsList);
+                }
             case 2:
                 registerOperation.register(bool);
             default:
@@ -55,7 +67,7 @@ public class Run {
                     //这里是学生的选课功能
                     HashMap<Student, Course> map = new HashMap<>();
 
-                    Student studentInformation = logInOperation.getStudent(bool,choice);
+                    Student studentInformation = studentLoginIn.getStudent(bool,studentsList);
 
                     System.out.println("""
                             下面是可以选择的课程,请回复课程名称：
@@ -66,6 +78,7 @@ public class Run {
                     Course course = new Course(courseChoice);
 
                     map.put(studentInformation,course);
+                    System.out.println("选课成功");
             }
         }
         else {

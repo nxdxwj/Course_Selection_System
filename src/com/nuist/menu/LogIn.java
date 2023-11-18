@@ -14,7 +14,7 @@ public class LogIn {
     ArrayList<Teacher> teachers = new ArrayList<>();
     Scanner input = new Scanner(System.in);
     String account;
-    public Student getStudent(boolean bool,int choice){
+    public Student getStudent(boolean bool,int choice,StudentsList studentsList){
         Student response = null;
         if (bool){
                     for (int i = 0; i < students.size(); i++) {
@@ -25,7 +25,7 @@ public class LogIn {
             }
         return response;
     }
-    public boolean logIn(boolean bool,int choice) {
+    public boolean logIn(boolean bool, int choice, TeachersList teachersList) {
         for (int i = 0; i < 3; i++) {
             System.out.println("Please enter your account.");
             account = input.next();
@@ -35,7 +35,7 @@ public class LogIn {
 
             switch (choice) {
                 case 1:
-                    teachers = teachersList.getTeacherArrayList();
+                    teachers = this.teachersList.getTeacherArrayList();
 
                     for (int j = 0; j < teachers.size(); j++) {
                         if (account.equals(teachers.get(j).getAccount()) && password.equals(teachers.get(j).getPassword())) {
