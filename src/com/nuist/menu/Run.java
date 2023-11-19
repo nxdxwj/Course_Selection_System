@@ -14,12 +14,21 @@ public class Run {
     Boolean bool = true;
     Scanner input =new Scanner(System.in);
     Integer amount = 0;
+    String account;
     // 主程序
     public void runMenu() {
         //初始化课程，学生，老师的相关信息
         Initial initialOperation = new Initial();
         coursesList=initialOperation.initialCoursesList();
         studentsList= initialOperation.initialStudentsList();
+        teachersList= initialOperation.initialTeacherList();
+        //
+        System.out.println("""
+                    请问你的身份是：
+                    1)教师
+                    2)学生
+                    """);
+        int choice = input.nextInt();
 
         Display disdplay = new Display();
         int option = disdplay.dispalyMenu();
@@ -28,13 +37,6 @@ public class Run {
         StudentLoginIn studentLoginIn = new StudentLoginIn();
 
         Register registerOperation = new Register();
-
-        System.out.println("""
-                    请问你的身份是：
-                    1)教师
-                    2)学生
-                    """);
-        int choice = input.nextInt();
 
         switch (option) {
             case 0:
@@ -48,30 +50,35 @@ public class Run {
                     case 2:
                         studentLoginIn.logIn(bool,studentsList);
                         break;
+                    default:
+                        System.out.println("Invalid choice entered.");
                 }
                 break;
             case 2:
                 registerOperation.register(bool);
                 break;
             default:
-                System.out.println("Invalid option entere. " + option);
+                System.out.println("Invalid option entered." + option);
                 bool = false;
         }
         if (bool) {
 
-            switch (option) {
-                case 0:
-                    //这里是老师的查询功能
-
-
-
-
-
+            HashMap<Student, Course> map = new HashMap<>();
+            switch (choice) {
                 case 1:
-                    //这里是学生的选课功能
-                    HashMap<Student, Course> map = new HashMap<>();
-                    HashMap<Course, Integer> hashMap = new HashMap<>();
+                    //这里是老师的查询功能
+                    Course course1 = new Course("物理");
+                    Course course2 = new Course("化学");
+                    Student student1 = new Student(31, "yaoxuan" ,"31" ,"31");
+                    Student student2 = new Student(29, "xuweijie" ,"29" ,"29");
+                    map.put(student1 , course1);
+                    map.put(student2 , course2);
+                    map.get(student1);
+                    map.get(student2);
 
+                case 2:
+                    //这里是学生的选课功能
+                    HashMap<Course, Integer> hashMap = new HashMap<>();
 
                     Student studentInformation = studentLoginIn.getStudent(bool,studentsList);
 

@@ -48,17 +48,18 @@ public class Register {
                 System.out.println("你的姓名是：");
                 String teacherName = input.next();
 
-                Teacher teacher = new Teacher(teacherId, teacherName, account, password);
-                teachers.addLast(teacher);
-                teachersList.setTeacherArrayList(teachers);
-
                 for (int i = 0; i < teachers.size(); i++) {
                     if (teacherId == teachers.get(i).getTeacherId() && teacherName.equals(teachers.get(i).getTeacherName()) && account.equals(teachers.get(i).getAccount()) && password.equals(teachers.get(i).getPassword())) {
                         System.out.println("你已经注册过该账号");
                         bool = false;
-                        break;
                     }
                 }
+
+                Teacher teacher = new Teacher(teacherId, teacherName, account, password);
+                teachers.addLast(teacher);
+                teachersList.setTeacherArrayList(teachers);
+
+                break;
 
             case 2:
                 System.out.println("你的学号是：");

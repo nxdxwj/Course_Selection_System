@@ -27,4 +27,11 @@ public class Initial {
         studentsList.setStudentArrayList(students);
         return studentsList;
     }
+
+    public TeachersList initialTeacherList(){
+        teachers.addLast(new Teacher(123,"Dave","123","123"));
+        teachersList.setTeacherArrayList(teachers);
+        return teachersList;
+    }
+    //
 }

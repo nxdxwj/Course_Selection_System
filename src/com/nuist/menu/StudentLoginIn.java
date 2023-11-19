@@ -10,6 +10,7 @@ import java.util.Scanner;
 public class StudentLoginIn {
     ArrayList<Student> students = new ArrayList<>();
     Scanner input = new Scanner(System.in);
+
     String account;
     public boolean logIn(boolean bool, StudentsList studentsList) {
         for (int i = 0; i < 3; i++) {
@@ -28,15 +29,15 @@ public class StudentLoginIn {
                     System.out.println("登录选课系统中，请稍后......");
                     System.out.println("Hello "+students.get(j).getStudentName()+"!");
                     return bool;
-                } else {
-                    System.out.println("The account or password is not correct,please try again.");
-                    System.out.println("You have " + (2 - i) + " opportunities left.");
                 }
             }
-            bool = false;
+            System.out.println("The account or password is not correct ,please try again.");
+            System.out.println("You have " + (2 - i) + " opportunities left.");
         }
+        bool = false;
         return bool;
     }
+
     public Student getStudent(boolean bool,StudentsList studentsList){
         students = studentsList.getStudentArrayList();
         Student response = null;
