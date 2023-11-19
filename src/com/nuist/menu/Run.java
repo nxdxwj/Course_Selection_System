@@ -76,15 +76,17 @@ public class Run {
             switch (choice) {
                 case 1:
                     //这里是老师的查询功能
+                    System.out.println("Here is the table showing your students' course selection information.");
                     Course course1 = new Course("物理");
                     Course course2 = new Course("化学");
                     Student student1 = new Student(31, "yaoxuan" ,"31" ,"31");
                     Student student2 = new Student(29, "xuweijie" ,"29" ,"29");
                     map.put(student1 , course1);
                     map.put(student2 , course2);
-                    map.get(student1);
-                    map.get(student2);
-
+                    Course lesson1 = map.get(student1);
+                    Course lesson2 = map.get(student2);
+                    System.out.println(student1.getStudentName() + lesson1.getCourseName());
+                    System.out.println(student2.getStudentName() + lesson2.getCourseName());
                     break;
 
                 case 2:
