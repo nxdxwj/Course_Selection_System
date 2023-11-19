@@ -10,17 +10,8 @@ import java.util.Scanner;
 public class StudentLoginIn {
     ArrayList<Student> students = new ArrayList<>();
     Scanner input = new Scanner(System.in);
-
-    String account;
-    public boolean logIn(boolean bool, StudentsList studentsList) {
+    public boolean logIn(boolean bool, StudentsList studentsList,String account,String password) {
         for (int i = 0; i < 3; i++) {
-            System.out.println("Please enter your account.");
-            account = input.next();
-
-            System.out.println("Please enter your password.");
-            String password = input.next();
-
-
             students = studentsList.getStudentArrayList();
 
             for (int j = 0; j < students.size(); j++) {
@@ -32,7 +23,13 @@ public class StudentLoginIn {
                 }
             }
             System.out.println("The account or password is not correct ,please try again.");
-            System.out.println("You have " + (2 - i) + " opportunities left.");
+            System.out.println("You have " + (2 - i+1) + " opportunities left.");
+
+            System.out.println("Please enter your account.");
+            account = input.next();
+
+            System.out.println("Please enter your password.");
+            password = input.next();
         }
         bool = false;
         return bool;

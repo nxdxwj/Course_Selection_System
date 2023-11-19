@@ -6,20 +6,21 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Initial {
-    CoursesList coursesList = new CoursesList();
-    ArrayList<Course> courses = new ArrayList<>();
+    CoursesArray coursesArray = new CoursesArray();
+    String[] courses =new String[10];
     StudentsList studentsList = new StudentsList();
     ArrayList<Student> students = new ArrayList<>();
     TeachersList teachersList = new TeachersList();
     ArrayList<Teacher> teachers = new ArrayList<>();
 
-    public CoursesList initialCoursesList() {
-        courses.addLast(new Course("物理"));
-        courses.addLast(new Course("化学"));
-        coursesList.setCourseArrayList(courses);
-        return coursesList;
-
-
+    public String[] initialCoursesArray() {
+        courses[0] = "乒乓球";
+        courses[1] = "篮球";
+        courses[2] = "游泳";
+        courses[3] = "足球";
+        courses[4] = "网球";
+        coursesArray.setCoursesArray(courses);
+        return coursesArray.getCoursesArray();
     }
     public StudentsList initialStudentsList(){
         students.addLast(new Student(29, "jack", "29", "29"));

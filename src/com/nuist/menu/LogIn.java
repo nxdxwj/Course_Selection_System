@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class LogIn {
-    CoursesList coursesList = new CoursesList();
+    CoursesArray coursesArray = new CoursesArray();
     ArrayList<Course> courses = new ArrayList<>();
     StudentsList studentsList = new StudentsList();
     ArrayList<Student> students = new ArrayList<>();
