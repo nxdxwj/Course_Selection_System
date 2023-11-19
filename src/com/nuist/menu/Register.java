@@ -13,15 +13,8 @@ public class Register {
     TeachersList teachersList = new TeachersList();
     ArrayList<Teacher> teachers = new ArrayList<>();
     Scanner input = new Scanner(System.in);
-    public boolean register (boolean bool){
-        System.out.println("Please enter your new account.");
+    public boolean register (boolean bool,int choice,String account,String password,String passwordConfirm){
 
-        String account = input.next();
-        System.out.println("Please enter the password you want to set.");
-        String password = input.next();
-
-        System.out.println("Please enter the password again to confirm.");
-        String passwordConfirm = input.next();
 
 
         while (!password.equals(passwordConfirm)) {
@@ -33,14 +26,8 @@ public class Register {
             passwordConfirm = input.next();
         }
 
-        System.out.println("""
-                        请问你的身份是：
-                        1)教师
-                        2)学生
-                        """);
-        int identity = input.nextInt();
 
-        switch (identity) {
+        switch (choice) {
             case 1:
                 System.out.println("你的工号是：");
                 int teacherId = input.nextInt();
@@ -68,10 +55,6 @@ public class Register {
                 System.out.println("你的姓名是：");
                 String studentName = input.next();
 
-                Student student = new Student(studentId, studentName, account, password);
-                students.addLast(student);
-                studentsList.setStudentArrayList(students);
-
                 for (int i = 0; i < students.size(); i++) {
                     if (studentId == students.get(i).getStudentId() && studentName.equals(students.get(i).getStudentName()) && account.equals(students.get(i).getAccount()) && password.equals(students.get(i).getPassword())) {
                         System.out.println("你已经注册过该账号");
@@ -79,6 +62,9 @@ public class Register {
                         break;
                     }
                 }
+                Student student = new Student(studentId, studentName, account, password);
+                students.addLast(student);
+                studentsList.setStudentArrayList(students);
         }
         System.out.println("You have created a new account successfully.");
         return bool;

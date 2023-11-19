@@ -55,7 +55,16 @@ public class Run {
                 }
                 break;
             case 2:
-                registerOperation.register(bool);
+                System.out.println("Please enter your new account.");
+                account = input.next();
+
+                System.out.println("Please enter the password you want to set.");
+                String password = input.next();
+
+                System.out.println("Please enter the password again to confirm.");
+                String passwordConfirm = input.next();
+
+                registerOperation.register(bool,choice,account,password,passwordConfirm);
                 break;
             default:
                 System.out.println("Invalid option entered." + option);
@@ -76,11 +85,13 @@ public class Run {
                     map.get(student1);
                     map.get(student2);
 
+                    break;
+
                 case 2:
                     //这里是学生的选课功能
                     HashMap<Course, Integer> hashMap = new HashMap<>();
 
-                    Student studentInformation = studentLoginIn.getStudent(bool,studentsList);
+                    Student studentInformation = studentLoginIn.getStudent(bool,studentsList,account);
 
                     System.out.println("""
                             下面是可以选择的课程,请回复课程名称：

@@ -38,7 +38,7 @@ public class StudentLoginIn {
         return bool;
     }
 
-    public Student getStudent(boolean bool,StudentsList studentsList){
+    public Student getStudent(boolean bool,StudentsList studentsList,String account){
         students = studentsList.getStudentArrayList();
         Student response = null;
         if (bool){
