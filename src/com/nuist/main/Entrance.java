@@ -7,6 +7,5 @@ public class Entrance {
         Run run = new Run();
         run.runMenu();
 
-
     }
 }

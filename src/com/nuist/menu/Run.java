@@ -9,17 +9,17 @@ import java.util.Scanner;
 
 public class Run {
     CoursesList coursesList = new CoursesList();
-    ArrayList<Course> courses = new ArrayList<>();
     StudentsList studentsList = new StudentsList();
-    ArrayList<Student> students = new ArrayList<>();
     TeachersList teachersList = new TeachersList();
-    ArrayList<Teacher> teachers = new ArrayList<>();
     Boolean bool = true;
     Scanner input =new Scanner(System.in);
+    Integer amount = 0;
     // 主程序
     public void runMenu() {
+        //初始化课程，学生，老师的相关信息
         Initial initialOperation = new Initial();
-        initialOperation.initial();
+        coursesList=initialOperation.initialCoursesList();
+        studentsList= initialOperation.initialStudentsList();
 
         Display disdplay = new Display();
         int option = disdplay.dispalyMenu();
@@ -44,11 +44,15 @@ public class Run {
                 switch (choice){
                     case 1:
                         teacherLoginIn.logIn(bool,teachersList);
+                        break;
                     case 2:
                         studentLoginIn.logIn(bool,studentsList);
+                        break;
                 }
+                break;
             case 2:
                 registerOperation.register(bool);
+                break;
             default:
                 System.out.println("Invalid option entere. " + option);
                 bool = false;
@@ -66,6 +70,8 @@ public class Run {
                 case 1:
                     //这里是学生的选课功能
                     HashMap<Student, Course> map = new HashMap<>();
+                    HashMap<Course, Integer> hashMap = new HashMap<>();
+
 
                     Student studentInformation = studentLoginIn.getStudent(bool,studentsList);
 
@@ -76,8 +82,11 @@ public class Run {
                             """);
                     String courseChoice = input.next();
                     Course course = new Course(courseChoice);
+                    amount = amount+1;
 
                     map.put(studentInformation,course);
+                    hashMap.put(course,amount);
+
                     System.out.println("选课成功");
             }
         }

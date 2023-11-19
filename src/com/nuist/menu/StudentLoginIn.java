@@ -25,14 +25,15 @@ public class StudentLoginIn {
             for (int j = 0; j < students.size(); j++) {
                 if (account.equals(students.get(j).getAccount()) && password.equals(students.get(j).getPassword())) {
                     System.out.println("Log in successfully.");
-                    break;
+                    System.out.println("登录选课系统中，请稍后......");
+                    System.out.println("Hello "+students.get(j).getStudentName()+"!");
+                    return bool;
                 } else {
                     System.out.println("The account or password is not correct,please try again.");
                     System.out.println("You have " + (2 - i) + " opportunities left.");
                 }
-                bool = false;
-
             }
+            bool = false;
         }
         return bool;
     }

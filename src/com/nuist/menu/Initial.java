@@ -13,13 +13,18 @@ public class Initial {
     TeachersList teachersList = new TeachersList();
     ArrayList<Teacher> teachers = new ArrayList<>();
 
-    public void initial() {
+    public CoursesList initialCoursesList() {
         courses.addLast(new Course("物理"));
         courses.addLast(new Course("化学"));
         coursesList.setCourseArrayList(courses);
+        return coursesList;
 
+
+    }
+    public StudentsList initialStudentsList(){
         students.addLast(new Student(29, "jack", "29", "29"));
         students.addLast(new Student(31, "yaoxuan", "31", "31"));
         studentsList.setStudentArrayList(students);
+        return studentsList;
     }
 }

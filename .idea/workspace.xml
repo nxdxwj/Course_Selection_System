@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82289362-0e79-49cb-b157-f5b55b4d2f25" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/nuist/menu/StudentLoginIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nuist/menu/TeacherLoginIn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nuist/main/Entrance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuist/main/Entrance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nuist/menu/Initial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuist/menu/Initial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuist/menu/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuist/menu/LogIn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nuist/menu/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuist/menu/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nuist/menu/StudentLoginIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nuist/menu/StudentLoginIn.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +107,9 @@
       <workItem from="1700219801221" duration="27000" />
       <workItem from="1700234087703" duration="4267000" />
       <workItem from="1700273746010" duration="1900000" />
+      <workItem from="1700275757106" duration="596000" />
+      <workItem from="1700354669916" duration="2075000" />
+      <workItem from="1700356838391" duration="741000" />
     </task>
     <servers />
   </component>
