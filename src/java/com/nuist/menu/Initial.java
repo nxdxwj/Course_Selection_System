@@ -23,14 +23,14 @@ public class Initial {
         return coursesArray.getCoursesArray();
     }
     public StudentsList initialStudentsList(){
-        students.addLast(new Student(29, "jack", "29", "29"));
-        students.addLast(new Student(31, "yaoxuan", "31", "31"));
+        students.add(0,new Student(29, "jack", "29", "29"));
+        students.add(1,new Student(31, "yaoxuan", "31", "31"));
         studentsList.setStudentArrayList(students);
         return studentsList;
     }
 
     public TeachersList initialTeacherList(){
-        teachers.addLast(new Teacher(123,"Dave","123","123"));
+        teachers.add(0,new Teacher(123,"Dave","123","123"));
         teachersList.setTeacherArrayList(teachers);
         return teachersList;
     }

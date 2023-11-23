@@ -4,7 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82289362-0e79-49cb-b157-f5b55b4d2f25" name="Changes" comment="" />
+    <list default="true" id="82289362-0e79-49cb-b157-f5b55b4d2f25" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cource_Selection_System.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/main/Entrance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/menu/Display.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/menu/Initial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/menu/LogIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/menu/Register.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/menu/Run.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/menu/StudentLoginIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/menu/TeacherLoginIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/model/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/model/CoursesArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/model/StudentsList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/model/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/model/TeachersList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nuist/main/Entrance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nuist/menu/Display.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nuist/menu/Initial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nuist/menu/LogIn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nuist/menu/Register.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nuist/menu/Run.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nuist/menu/StudentLoginIn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nuist/menu/TeacherLoginIn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nuist/model/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nuist/model/CoursesArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nuist/model/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nuist/model/StudentsList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nuist/model/Teacher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nuist/model/TeachersList.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,15 +63,19 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2XLTFS8rNJK6PUsrYjjx2HX1R8F" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
@@ -44,14 +84,19 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager" selected="Application.Entrance">
     <configuration name="Entrance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.nuist.main.Entrance" />
-      <module name="Course_Selection_System" />
+      <module name="Cource_Selection_System" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.nuist.main.*" />
@@ -71,6 +116,19 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Course_Selection_System" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Course_Selection_System" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -104,10 +162,14 @@
       <workItem from="1700275757106" duration="596000" />
       <workItem from="1700354669916" duration="2075000" />
       <workItem from="1700356838391" duration="741000" />
+      <workItem from="1700752205003" duration="1096000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

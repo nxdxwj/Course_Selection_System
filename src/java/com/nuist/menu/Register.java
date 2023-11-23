@@ -43,7 +43,7 @@ public class Register {
                 }
 
                 Teacher teacher = new Teacher(teacherId, teacherName, account, password);
-                teachers.addLast(teacher);
+                teachers.add(teachers.size(),teacher);
                 teachersList.setTeacherArrayList(teachers);
 
                 break;
@@ -63,7 +63,7 @@ public class Register {
                     }
                 }
                 Student student = new Student(studentId, studentName, account, password);
-                students.addLast(student);
+                students.add(students.size(),student);
                 studentsList.setStudentArrayList(students);
         }
         System.out.println("You have created a new account successfully.");
