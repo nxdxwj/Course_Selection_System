@@ -5,41 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82289362-0e79-49cb-b157-f5b55b4d2f25" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cource_Selection_System.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/main/Entrance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/menu/Display.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/menu/Initial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/menu/LogIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/menu/Register.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/menu/Run.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/menu/StudentLoginIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/menu/TeacherLoginIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/model/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/model/CoursesArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/model/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/model/StudentsList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/model/Teacher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/nuist/model/TeachersList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/List.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuist/main/Entrance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuist/menu/Display.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuist/menu/Initial.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuist/menu/LogIn.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuist/menu/Register.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuist/menu/Run.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuist/menu/StudentLoginIn.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuist/menu/TeacherLoginIn.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuist/model/Course.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuist/model/CoursesArray.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuist/model/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuist/model/StudentsList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuist/model/Teacher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nuist/model/TeachersList.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,27 +37,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/code/Course_Selection_System",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Repository/Course_Selection_System&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Entrance">
     <configuration name="Entrance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-21" />
@@ -162,7 +129,9 @@
       <workItem from="1700275757106" duration="596000" />
       <workItem from="1700354669916" duration="2075000" />
       <workItem from="1700356838391" duration="741000" />
-      <workItem from="1700752205003" duration="1096000" />
+      <workItem from="1700752205003" duration="1933000" />
+      <workItem from="1700810979847" duration="603000" />
+      <workItem from="1700821896291" duration="11000" />
     </task>
     <servers />
   </component>
