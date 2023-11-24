@@ -1,17 +1,14 @@
 package com.nuist.model;
 
 public class CoursesArray {
-    private static String[] coursesArray = new String[10];
 
-    public String[] getCoursesArray() {
+    private Course[] coursesArray = new Course[5];
+
+    public Course[] getCoursesArray() {
         return coursesArray;
     }
 
-    public void setCoursesArray(String[] coursesArray) {
+    public void setCoursesArray(Course[] coursesArray) {
         this.coursesArray = coursesArray;
-    }
-
-    public String getArrayElement(int index){
-        return coursesArray[index];
     }
 }

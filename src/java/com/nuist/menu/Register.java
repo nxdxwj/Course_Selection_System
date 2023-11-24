@@ -30,7 +30,7 @@ public class Register {
         switch (choice) {
             case 1:
                 System.out.println("你的工号是：");
-                int teacherId = input.nextInt();
+                String teacherId = input.next();
 
                 System.out.println("你的姓名是：");
                 String teacherName = input.next();
@@ -50,7 +50,7 @@ public class Register {
 
             case 2:
                 System.out.println("你的学号是：");
-                int studentId = input.nextInt();
+                String studentId = input.next();
 
                 System.out.println("你的姓名是：");
                 String studentName = input.next();

@@ -13,7 +13,6 @@ public class Run {
     TeachersList teachersList = new TeachersList();
     Boolean bool = true;
     Scanner input =new Scanner(System.in);
-    Integer amount = 0;
     String account;
     String password;
     // 主程序
@@ -81,21 +80,20 @@ public class Run {
             switch (choice) {
                 case 1:
                     //这里是老师的查询功能
-                    System.out.println("Here is the table showing your students' course selection information.");
-                    String[] coursearry = coursesArray.getCoursesArray();
-                    String course1 = coursesArray.getArrayElement(0);
-                    String course2 = coursesArray.getArrayElement(1);
-
-                    Student student1 = studentsList.getStudentArrayList().get(0);
-                    Student student2 = studentsList.getStudentArrayList().get(1);
-
-                    System.out.println(student1.getStudentName() +  course1);
-                    System.out.println(student2.getStudentName() +  course2);
-                    break;
+//                    System.out.println("Here is the table showing your students' course selection information.");
+//                    Course[] coursearry = coursesArray.getCoursesArray();
+//                    String course1 = coursesArray.getCoursesArray()[0];
+//                    String course2 = coursesArray.getArrayElement(1);
+//
+//                    Student student1 = studentsList.getStudentArrayList().get(0);
+//                    Student student2 = studentsList.getStudentArrayList().get(1);
+//
+//                    System.out.println(student1.getStudentName() +  course1);
+//                    System.out.println(student2.getStudentName() +  course2);
+//                    break;
 
                 case 2:
                     //这里是学生的选课功能
-                    HashMap<Course, Integer> hashMap = new HashMap<>();
 
                     HashMap<Student, Course> map = new HashMap<>();
 
@@ -107,11 +105,10 @@ public class Run {
                             2)化学
                             """);
                     String courseChoice = input.next();
-                    Course course = new Course(courseChoice);
-                    amount = amount+1;
-
-                    map.put(studentInformation,course);
-                    hashMap.put(course,amount);
+//
+//                    amount = amount+1;
+//
+//                    map.put(studentInformation,course);
 
                     System.out.println("选课成功");
             }

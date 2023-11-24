@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82289362-0e79-49cb-b157-f5b55b4d2f25" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/List.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/List.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/List.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/com/nuist/menu/Initial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/nuist/menu/Initial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/com/nuist/menu/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/nuist/menu/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/com/nuist/menu/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/nuist/menu/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/com/nuist/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/nuist/model/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/com/nuist/model/CoursesArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/nuist/model/CoursesArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/com/nuist/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/nuist/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/com/nuist/model/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/nuist/model/Teacher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,6 +139,8 @@
       <workItem from="1700752205003" duration="1933000" />
       <workItem from="1700810979847" duration="603000" />
       <workItem from="1700821896291" duration="11000" />
+      <workItem from="1700831468757" duration="871000" />
+      <workItem from="1700832914789" duration="2730000" />
     </task>
     <servers />
   </component>

@@ -1,23 +1,23 @@
 package com.nuist.model;
 
 public class Student {
-    private int studentId;
+    private String studentId;
     private String studentName;
     private String account;
     private String password;
 
-    public Student(int studentId, String studentName, String account, String password) {
+    public Student(String studentId, String studentName, String account, String password) {
         this.studentId = studentId;
         this.studentName = studentName;
         this.account = account;
         this.password = password;
     }
 
-    public int getStudentId() {
+    public String getStudentId() {
         return studentId;
     }
 
-    public void setStudentId(int studentId) {
+    public void setStudentId(String studentId) {
         this.studentId = studentId;
     }
 
