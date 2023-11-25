@@ -1,7 +1,16 @@
 package com.nuist.menu;
 
 import com.nuist.model.*;
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -13,6 +22,16 @@ public class Register {
     TeachersList teachersList = new TeachersList();
     ArrayList<Teacher> teachers = new ArrayList<>();
     Scanner input = new Scanner(System.in);
+    XSSFWorkbook xssfWorkbook;
+
+    {
+        try {
+            xssfWorkbook = new XSSFWorkbook(new FileInputStream("./List.xlsx"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     public boolean register (boolean bool,int choice,String account,String password,String passwordConfirm){
 
 
@@ -46,6 +65,20 @@ public class Register {
                 teachers.add(teachers.size(),teacher);
                 teachersList.setTeacherArrayList(teachers);
 
+                XSSFSheet sheet = xssfWorkbook.getSheetAt(1);
+                XSSFRow row = sheet.createRow(teachers.size()+1);
+
+                XSSFCell cell = row.createCell(0);
+                cell.setCellValue(teacherId);
+
+                XSSFCell cell1 = row.createCell(1);
+                cell1.setCellValue(teacherName);
+
+                XSSFCell cell3 = row.createCell(2);
+                cell3.setCellValue(account);
+
+                XSSFCell cell4 = row.createCell(3);
+                cell4.setCellValue(password);
                 break;
 
             case 2:
@@ -65,6 +98,21 @@ public class Register {
                 Student student = new Student(studentId, studentName, account, password);
                 students.add(students.size(),student);
                 studentsList.setStudentArrayList(students);
+
+                XSSFSheet sheet1 = xssfWorkbook.getSheetAt(0);
+                XSSFRow row1 = sheet1.createRow(teachers.size()+1);
+
+                XSSFCell cell00 = row1.createCell(0);
+                cell00.setCellValue(studentId);
+
+                XSSFCell cell11 = row1.createCell(1);
+                cell11.setCellValue(studentName);
+
+                XSSFCell cell33 = row1.createCell(2);
+                cell33.setCellValue(account);
+
+                XSSFCell cell44 = row1.createCell(3);
+                cell44.setCellValue(password);
         }
         System.out.println("You have created a new account successfully.");
         return bool;

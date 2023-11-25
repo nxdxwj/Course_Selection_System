@@ -21,7 +21,7 @@ public class Initial {
 
     {
         try {
-            xssfWorkbook = new XSSFWorkbook(new FileInputStream("./学生信息.xlsx"));
+            xssfWorkbook = new XSSFWorkbook(new FileInputStream("./List.xlsx"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -31,13 +31,16 @@ public class Initial {
         XSSFSheet sheet = xssfWorkbook.getSheetAt(2);
 
         int rowNum = sheet.getLastRowNum();
+        int j = 0;
         for (int row = 1; row <= rowNum; row++) {
 
-            String name = sheet.getRow(row).getCell(1).toString();
-            String enrollment = sheet.getRow(row).getCell(2).toString();
+            String name = sheet.getRow(row).getCell(0).toString();
+            String enrollment = sheet.getRow(row).getCell(1).toString();
 
             Course course = new Course(name, enrollment);
-            courses[courses.length] = course;
+            courses[j] = course;
+
+            j= j +1;
         }
 
         coursesArray.setCoursesArray(courses);

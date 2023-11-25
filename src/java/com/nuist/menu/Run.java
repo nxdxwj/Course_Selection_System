@@ -2,7 +2,17 @@ package com.nuist.menu;
 
 
 import com.nuist.model.*;
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -15,11 +25,13 @@ public class Run {
     Scanner input =new Scanner(System.in);
     String account;
     String password;
+    int amount;
+    String amountString = null;
     // 主程序
     public void runMenu() {
         //初始化课程，学生，老师的相关信息
         Initial initialOperation = new Initial();
-        initialOperation.initialCoursesArray();
+        Course[] courses = initialOperation.initialCoursesArray();
         studentsList= initialOperation.initialStudentsList();
         teachersList= initialOperation.initialTeacherList();
         //
@@ -37,6 +49,7 @@ public class Run {
         StudentLoginIn studentLoginIn = new StudentLoginIn();
 
         Register registerOperation = new Register();
+
 
         switch (option) {
             case 0:
@@ -95,22 +108,65 @@ public class Run {
                 case 2:
                     //这里是学生的选课功能
 
-                    HashMap<Student, Course> map = new HashMap<>();
+                    HashMap<Student, String> map = new HashMap<>();
 
-                    Student studentInformation = studentLoginIn.getStudent(bool,studentsList,account);
+                    Student studentInformation = studentLoginIn.getStudent(bool, studentsList, account);
 
                     System.out.println("""
                             下面是可以选择的课程,请回复课程名称：
-                            1)物理
-                            2)化学
+                            1)乒乓球
+                            2)篮球
+                            3)游泳
+                            4)足球
+                            5)网球
                             """);
                     String courseChoice = input.next();
-//
-//                    amount = amount+1;
-//
-//                    map.put(studentInformation,course);
+
+                    for (int i = 0; i < courses.length; i++) {
+                        if (courses[i].getCourseName().equals(courseChoice)) {
+
+                            amountString = courses[i].getEnrollment();
+                            double amountDouble = Double.parseDouble(amountString);
+                            amount = (int) amountDouble;
+                            amount++;
+
+
+                            break;
+                        }
+                    }
+                    Course course = new Course(courseChoice, amountString);
+                    map.put(studentInformation, course.getCourseName());
 
                     System.out.println("选课成功");
+
+
+                    try {
+                        FileInputStream fileInputStream = new FileInputStream("./List.xlsx");
+                        try {
+                            XSSFWorkbook xssfWorkbook = new XSSFWorkbook(fileInputStream);
+                            XSSFSheet sheet = xssfWorkbook.getSheetAt(2);
+                            int rowNum = sheet.getLastRowNum();
+                            for (int i = 1; i < rowNum; i++) {
+                                if (sheet.getRow(i).getCell(0).toString().equals(courseChoice)) {
+                                    XSSFCell cell = sheet.getRow(i).getCell(1);
+                                    cell.setCellValue(amountString);
+                                    break;
+                                }
+                            }
+                            FileOutputStream fileOutputStream = new FileOutputStream("/List.xlsx");
+                            xssfWorkbook.write(fileOutputStream);
+                            fileOutputStream.close();
+                            System.out.println("数据更新完成！");
+
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
+
+                    } catch (FileNotFoundException e) {
+                        throw new RuntimeException(e);
+                    }
+
+
             }
         }
         else {
