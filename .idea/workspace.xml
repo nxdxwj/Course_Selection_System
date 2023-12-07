@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82289362-0e79-49cb-b157-f5b55b4d2f25" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/List1.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/List.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/List.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/com/nuist/menu/Initial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/nuist/menu/Initial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/com/nuist/menu/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/nuist/menu/Register.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java/com/nuist/menu/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/nuist/menu/Run.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/com/nuist/menu/TeacherLoginIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/nuist/menu/TeacherLoginIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nuist/menu/Initial.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nuist/menu/Initial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nuist/menu/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nuist/menu/Run.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/com/nuist/menu/StudentLoginIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/nuist/menu/StudentLoginIn.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +48,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/JAVA程序/Test1",
+    "last_opened_file_path": "D:/Repository/Course_Selection_System",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -144,6 +140,7 @@
       <workItem from="1700918686355" duration="3856000" />
       <workItem from="1700974039206" duration="3598000" />
       <workItem from="1701947181361" duration="1956000" />
+      <workItem from="1701949214323" duration="1041000" />
     </task>
     <servers />
   </component>

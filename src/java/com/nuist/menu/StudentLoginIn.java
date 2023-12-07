@@ -17,7 +17,7 @@ public class StudentLoginIn {
             for (int j = 0; j < students.size(); j++) {
                 if (account.equals(students.get(j).getAccount()) && password.equals(students.get(j).getPassword())) {
                     System.out.println("Log in successfully.");
-                    System.out.println("登录选课系统中，请稍后......");
+                    System.out.println("Login to the course selection system, please wait......");
                     System.out.println("Hello "+students.get(j).getStudentName()+"!");
                     return bool;
                 }

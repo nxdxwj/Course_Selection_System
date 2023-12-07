@@ -93,7 +93,7 @@ public class Run {
         if (bool) {
             switch (choice) {
                 case 1:
-                    //这里是老师的查询功能
+                    //This is the teacher's query function
 //                    System.out.println("Here is the table showing your students' course selection information.");
 //                    Course[] coursearry = coursesArray.getCoursesArray();
 //                    String course1 = coursesArray.getCoursesArray()[0];
@@ -107,7 +107,7 @@ public class Run {
 //                    break;
 
                 case 2:
-                    //这里是学生的选课功能
+                    //This is the course selection function for students
 
                     HashMap<Student, String> map = new HashMap<>();
 

@@ -48,15 +48,15 @@ public class Register {
 
         switch (choice) {
             case 1:
-                System.out.println("你的工号是：");
+                System.out.println("Your job number is：");
                 String teacherId = input.next();
 
-                System.out.println("你的姓名是：");
+                System.out.println("Your name is：");
                 String teacherName = input.next();
 
                 for (int i = 0; i < teachers.size(); i++) {
                     if (teacherId == teachers.get(i).getTeacherId() && teacherName.equals(teachers.get(i).getTeacherName()) && account.equals(teachers.get(i).getAccount()) && password.equals(teachers.get(i).getPassword())) {
-                        System.out.println("你已经注册过该账号");
+                        System.out.println("You have already registered for this account");
                         bool = false;
                     }
                 }
@@ -82,15 +82,15 @@ public class Register {
                 break;
 
             case 2:
-                System.out.println("你的学号是：");
+                System.out.println("Your student ID is：");
                 String studentId = input.next();
 
-                System.out.println("你的姓名是：");
+                System.out.println("Your name is：");
                 String studentName = input.next();
 
                 for (int i = 0; i < students.size(); i++) {
                     if (studentId == students.get(i).getStudentId() && studentName.equals(students.get(i).getStudentName()) && account.equals(students.get(i).getAccount()) && password.equals(students.get(i).getPassword())) {
-                        System.out.println("你已经注册过该账号");
+                        System.out.println("You have already registered for this account");
                         bool = false;
                         break;
                     }
