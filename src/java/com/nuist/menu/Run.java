@@ -63,10 +63,10 @@ public class Run {
                         break;
                     case 2:
                         System.out.println("Please enter your account.");
-                        account = input.next();
+                        account = input.next()+".0";
 
                         System.out.println("Please enter your password.");
-                        password = input.next();
+                        password = input.next()+".0";
 
                         bool=studentLoginIn.logIn(bool,studentsList,account,password);
                         break;
@@ -76,13 +76,13 @@ public class Run {
                 break;
             case 2:
                 System.out.println("Please enter your new account.");
-                account = input.next();
+                account = input.next()+".0";
 
                 System.out.println("Please enter the password you want to set.");
-                String password = input.next();
+                String password = input.next()+".0";
 
                 System.out.println("Please enter the password again to confirm.");
-                String passwordConfirm = input.next();
+                String passwordConfirm = input.next()+".0";
 
                 registerOperation.register(bool,choice,account,password,passwordConfirm);
                 break;
