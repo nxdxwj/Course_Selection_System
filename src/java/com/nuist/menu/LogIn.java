@@ -47,6 +47,7 @@ public class LogIn {
                         }
                         bool = false;
                     }
+                    break;
 
                 case 2:
                     students = studentsList.getStudentArrayList();

@@ -59,7 +59,7 @@ public class Run {
             case 1:
                 switch (choice){
                     case 1:
-                        teacherLoginIn.logIn(bool,teachersList);
+                        bool = teacherLoginIn.logIn(bool,teachersList);
                         break;
                     case 2:
                         System.out.println("Please enter your account.");
@@ -94,17 +94,17 @@ public class Run {
             switch (choice) {
                 case 1:
                     //This is the teacher's query function
-//                    System.out.println("Here is the table showing your students' course selection information.");
-//                    Course[] coursearry = coursesArray.getCoursesArray();
-//                    String course1 = coursesArray.getCoursesArray()[0];
-//                    String course2 = coursesArray.getArrayElement(1);
-//
-//                    Student student1 = studentsList.getStudentArrayList().get(0);
-//                    Student student2 = studentsList.getStudentArrayList().get(1);
-//
-//                    System.out.println(student1.getStudentName() +  course1);
-//                    System.out.println(student2.getStudentName() +  course2);
-//                    break;
+                    System.out.println("Here is the table showing your students' course selection information.");
+
+                    String course1 = courses[0].getCourseName();
+                    String course2 = courses[1].getCourseName();
+
+                    Student student1 = studentsList.getStudentArrayList().get(0);
+                    Student student2 = studentsList.getStudentArrayList().get(1);
+
+                    System.out.println(student1.getStudentName() + " -> "+ course1);
+                    System.out.println(student2.getStudentName() + " -> " + course2);
+                    break;
 
                 case 2:
                     //This is the course selection function for students
