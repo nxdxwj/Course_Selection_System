@@ -22,6 +22,7 @@ public class TeacherLoginIn {
 
             teachers = teachersList.getTeacherArrayList();
 
+            //Traverse search
             for (int j = 0; j < teachers.size(); j++) {
                 if (account.equals(teachers.get(j).getAccount()) && password.equals(teachers.get(j).getPassword())) {
                     System.out.println("Log in successfully.");

@@ -6,6 +6,7 @@ import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -29,16 +30,16 @@ public class Run {
     String amountString = null;
     // 主程序
     public void runMenu() {
-        //初始化课程，学生，老师的相关信息
+        //Initialize course, student, and teacher related information
         Initial initialOperation = new Initial();
         Course[] courses = initialOperation.initialCoursesArray();
         studentsList= initialOperation.initialStudentsList();
         teachersList= initialOperation.initialTeacherList();
         //
         System.out.println("""
-                    请问你的身份是：
-                    1)教师
-                    2)学生
+                    May I ask your identity：
+                    1)teacher
+                    2)student
                     """);
         int choice = input.nextInt();
 
@@ -113,12 +114,12 @@ public class Run {
                     Student studentInformation = studentLoginIn.getStudent(bool, studentsList, account);
 
                     System.out.println("""
-                            下面是可以选择的课程,请回复课程名称：
-                            1)乒乓球
-                            2)篮球
-                            3)游泳
-                            4)足球
-                            5)网球
+                            Here are the courses that can be selected. Please reply with the course name：
+                            1)table tennis
+                            2)basketball
+                            3)swimming
+                            4)football
+                            5)tennis
                             """);
                     String courseChoice = input.next();
 
@@ -129,6 +130,7 @@ public class Run {
                             double amountDouble = Double.parseDouble(amountString);
                             amount = (int) amountDouble;
                             amount++;
+                            amountString = String.valueOf(amount);
 
 
                             break;
@@ -137,7 +139,7 @@ public class Run {
                     Course course = new Course(courseChoice, amountString);
                     map.put(studentInformation, course.getCourseName());
 
-                    System.out.println("选课成功");
+                    System.out.println("Course selecting successfully");
 
 
                     try {
@@ -146,17 +148,21 @@ public class Run {
                             XSSFWorkbook xssfWorkbook = new XSSFWorkbook(fileInputStream);
                             XSSFSheet sheet = xssfWorkbook.getSheetAt(2);
                             int rowNum = sheet.getLastRowNum();
-                            for (int i = 1; i < rowNum; i++) {
+                            for (int i = 1; i <= rowNum; i++) {
                                 if (sheet.getRow(i).getCell(0).toString().equals(courseChoice)) {
-                                    XSSFCell cell = sheet.getRow(i).getCell(1);
+
+                                    XSSFRow row = sheet.createRow(i);
+                                    XSSFCell cell = row.createCell(1);
+                                    System.out.println(amountString);
                                     cell.setCellValue(amountString);
+
                                     break;
                                 }
                             }
                             FileOutputStream fileOutputStream = new FileOutputStream("/List.xlsx");
                             xssfWorkbook.write(fileOutputStream);
                             fileOutputStream.close();
-                            System.out.println("数据更新完成！");
+                            System.out.println("Data updating completed！");
 
                         } catch (IOException e) {
                             throw new RuntimeException(e);
@@ -170,7 +176,7 @@ public class Run {
             }
         }
         else {
-            System.out.println("正在返回初始页面，请稍候");
+            System.out.println("Returning to initial page, please wait~");
             System.out.println("-------------------");
             runMenu();
         }

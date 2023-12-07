@@ -50,6 +50,7 @@ public class Initial {
         XSSFSheet sheet = xssfWorkbook.getSheetAt(0);
 
         int rowNum = sheet.getLastRowNum();
+        System.out.println(rowNum);
         for (int row = 1; row <= rowNum; row++) {
 
             String id = sheet.getRow(row).getCell(0).toString();
