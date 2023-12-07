@@ -14,10 +14,10 @@ public class TeacherLoginIn {
         for (int i = 0; i < 3; i++) {
 
             System.out.println("Please enter your account.");
-            account = input.next();
+            account = input.next()+".0";
 
             System.out.println("Please enter your password.");
-            String password = input.next();
+            String password = input.next()+".0";
 
 
             teachers = teachersList.getTeacherArrayList();
