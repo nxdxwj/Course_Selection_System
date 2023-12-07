@@ -90,5 +90,4 @@ public class Initial {
         teachersList.setTeacherArrayList(teachers);
         return teachersList;
     }
-    //
 }
