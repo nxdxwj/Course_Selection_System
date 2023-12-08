@@ -110,6 +110,7 @@ public class Run {
 
                     System.out.println(student1.getStudentName() + " -> "+ course1);
                     System.out.println(student2.getStudentName() + " -> " + course2);
+                    runMenu();
                     break;
                 //This is the course selection function for students
                 case 2:
@@ -136,8 +137,6 @@ public class Run {
                             amount = (int) amountDouble;
                             amount++;
                             amountString = String.valueOf(amount);
-
-
                             break;
                         }
                     }
@@ -145,7 +144,7 @@ public class Run {
                     map.put(studentInformation, course.getCourseName());
 
                     System.out.println("Course selecting successfully");
-
+                    runMenu();
                     //Attempting to achieve permanent data storage using external Excel files
                     try {
                         FileInputStream fileInputStream = new FileInputStream("./List.xlsx");
@@ -176,7 +175,6 @@ public class Run {
                     } catch (FileNotFoundException e) {
                         throw new RuntimeException(e);
                     }
-
 
             }
         }
