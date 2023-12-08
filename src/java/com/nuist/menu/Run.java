@@ -35,7 +35,8 @@ public class Run {
         Course[] courses = initialOperation.initialCoursesArray();
         studentsList= initialOperation.initialStudentsList();
         teachersList= initialOperation.initialTeacherList();
-        //
+
+        //The additional menu to Confirm user's identity
         System.out.println("""
                     May I ask your identity：
                     1)teacher
@@ -43,6 +44,7 @@ public class Run {
                     """);
         int choice = input.nextInt();
 
+        //Display featured menu information
         Display disdplay = new Display();
         int option = disdplay.dispalyMenu();
 
@@ -51,16 +53,19 @@ public class Run {
 
         Register registerOperation = new Register();
 
-
         switch (option) {
+            //Terminate Programming
             case 0:
                 System.out.println("See you ~");
                 System.exit(0);
+            //Log in the NUIST Course Selection System
             case 1:
                 switch (choice){
+                    //User is a teacher
                     case 1:
                         bool = teacherLoginIn.logIn(bool,teachersList);
                         break;
+                    //User is a student
                     case 2:
                         System.out.println("Please enter your account.");
                         account = input.next()+".0";
@@ -74,6 +79,7 @@ public class Run {
                         System.out.println("Invalid choice entered.");
                 }
                 break;
+            //Creat a new account
             case 2:
                 System.out.println("Please enter your new account.");
                 account = input.next()+".0";
@@ -92,8 +98,8 @@ public class Run {
         }
         if (bool) {
             switch (choice) {
+                //This is the teacher's query function
                 case 1:
-                    //This is the teacher's query function
                     System.out.println("Here is the table showing your students' course selection information.");
 
                     String course1 = courses[0].getCourseName();
@@ -105,10 +111,9 @@ public class Run {
                     System.out.println(student1.getStudentName() + " -> "+ course1);
                     System.out.println(student2.getStudentName() + " -> " + course2);
                     break;
-
+                //This is the course selection function for students
                 case 2:
-                    //This is the course selection function for students
-
+                    //Using Hash Tree Objects to achieve some kind of mapping relationship
                     HashMap<Student, String> map = new HashMap<>();
 
                     Student studentInformation = studentLoginIn.getStudent(bool, studentsList, account);
@@ -141,7 +146,7 @@ public class Run {
 
                     System.out.println("Course selecting successfully");
 
-
+                    //Attempting to achieve permanent data storage using external Excel files
                     try {
                         FileInputStream fileInputStream = new FileInputStream("./List.xlsx");
                         try {

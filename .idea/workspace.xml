@@ -6,8 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="82289362-0e79-49cb-b157-f5b55b4d2f25" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/List.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/List.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/List1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/com/nuist/main/Entrance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/nuist/main/Entrance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/com/nuist/menu/LogIn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/com/nuist/menu/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/nuist/menu/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/com/nuist/menu/StudentLoginIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/nuist/menu/StudentLoginIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/com/nuist/model/CoursesArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/nuist/model/CoursesArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/com/nuist/model/StudentsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/nuist/model/StudentsList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nuist/menu/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nuist/menu/Run.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +146,8 @@
       <workItem from="1701947181361" duration="1956000" />
       <workItem from="1701949214323" duration="1041000" />
       <workItem from="1701950432292" duration="2124000" />
-      <workItem from="1701958094231" duration="3962000" />
+      <workItem from="1701958094231" duration="4361000" />
+      <workItem from="1702044744057" duration="3560000" />
     </task>
     <servers />
   </component>

@@ -13,7 +13,7 @@ public class StudentLoginIn {
     public boolean logIn(boolean bool, StudentsList studentsList,String account,String password) {
         for (int i = 0; i < 3; i++) {
             students = studentsList.getStudentArrayList();
-
+            //Implementing filtering search using a for loop to match a proper information
             for (int j = 0; j < students.size(); j++) {
                 if (account.equals(students.get(j).getAccount()) && password.equals(students.get(j).getPassword())) {
                     System.out.println("Log in successfully.");
@@ -39,6 +39,7 @@ public class StudentLoginIn {
         students = studentsList.getStudentArrayList();
         Student response = null;
         if (bool){
+            //Aslo implementing a flitering search
             for (int i = 0; i < students.size(); i++) {
                 if (account.equals(students.get(i).getAccount())){
                     response = students.get(i);
