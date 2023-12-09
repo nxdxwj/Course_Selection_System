@@ -36,6 +36,16 @@ public class Run {
         studentsList= initialOperation.initialStudentsList();
         teachersList= initialOperation.initialTeacherList();
 
+        //Display featured menu information
+        Display disdplay = new Display();
+        int option = disdplay.dispalyMenu();
+
+        if (option==0){
+            //Terminate Programming
+            System.out.println("See you ~");
+            System.exit(0);
+        }
+
         //The additional menu to Confirm user's identity
         System.out.println("""
                     May I ask your identity：
@@ -44,20 +54,12 @@ public class Run {
                     """);
         int choice = input.nextInt();
 
-        //Display featured menu information
-        Display disdplay = new Display();
-        int option = disdplay.dispalyMenu();
-
         TeacherLoginIn teacherLoginIn = new TeacherLoginIn();
         StudentLoginIn studentLoginIn = new StudentLoginIn();
 
         Register registerOperation = new Register();
 
         switch (option) {
-            //Terminate Programming
-            case 0:
-                System.out.println("See you ~");
-                System.exit(0);
             //Log in the NUIST Course Selection System
             case 1:
                 switch (choice){
@@ -110,6 +112,7 @@ public class Run {
 
                     System.out.println(student1.getStudentName() + " -> "+ course1);
                     System.out.println(student2.getStudentName() + " -> " + course2);
+                    System.out.println();
                     runMenu();
                     break;
                 //This is the course selection function for students
@@ -144,6 +147,7 @@ public class Run {
                     map.put(studentInformation, course.getCourseName());
 
                     System.out.println("Course selecting successfully");
+                    System.out.println();
                     runMenu();
                     //Attempting to achieve permanent data storage using external Excel files
                     try {
@@ -181,6 +185,7 @@ public class Run {
         else {
             System.out.println("Returning to initial page, please wait~");
             System.out.println("-------------------");
+            System.out.println();
             runMenu();
         }
     }
