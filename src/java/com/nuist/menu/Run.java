@@ -123,7 +123,7 @@ public class Run {
                     Student studentInformation = studentLoginIn.getStudent(bool, studentsList, account);
 
                     System.out.println("""
-                            Here are the courses that can be selected. Please reply with the course name：
+                            Here are the courses that can be selected. Please choose a course you are interested in：
                             1)table tennis
                             2)basketball
                             3)swimming
