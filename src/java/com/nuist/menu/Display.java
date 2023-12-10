@@ -1,3 +1,4 @@
+
 package com.nuist.menu;
 
 import java.util.Scanner;
